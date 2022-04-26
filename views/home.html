@@ -1,31 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!--CSS-->
-    <link rel="stylesheet" href="styles/styles.css">
-
-    <title>Diner</title>
-</head>
+<include href="views/header.html"></include>
 <body>
     <div class="container">
         <h1>My Diner</h1>
         <p>Welcome to my diner, serving the best burgers in town!</p>
-        <img id="dinerImg" class="d-block mb-3" src="images/diner.jpeg" alt="My Diner">
-        <button class="btn btn-primary d-block mb-3">Place Order</button>
+        <img id="dinerImg" class="d-block mb-3" src="{{ @BASE }}/images/diner.jpeg" alt="My Diner">
 
         <label>Menus</label>
         <ul>
             <li><a href="breakfast">Breakfast</a></li>
             <li><a href="lunch">Lunch</a></li>
         </ul>
+        <a href="order"><button class="btn btn-primary d-block mt-5">Place Order</button></a>
     </div>
 
 
