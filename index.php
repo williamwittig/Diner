@@ -28,5 +28,11 @@ $f3->route('GET /lunch', function() {
     echo $view->render('views/lunch.html');
 });
 
+// Order page rendering
+$f3->route('GET /order', function() {
+    $view = new Template();
+    echo $view->render('views/orderForm1.html');
+});
+
 // Run fat free
 $f3->run();
